@@ -13,7 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          persist-credentials: false  # 禁用自动GitHub token传递
           fetch-depth: 0  # 获取整个git历史
 
       - name: Configure git
@@ -30,17 +29,14 @@ jobs:
       - name: Merge upstream changes
         id: merge
         run: |
-          git merge upstream/main --allow-unrelated-histories || echo "Merge failed" >> $GITHUB_ENV
+          git merge upstream/main --allow-unrelated-histories || echo "MERGE_FAILED=true" >> $GITHUB_ENV
 
       - name: Check merge result
-        if: env.MERGE_FAILED
+        if: env.MERGE_FAILED == 'true'
         run: |
           echo "Merge conflict detected, creating pull request."
           gh pr create --title "Merge upstream changes" --body "This PR contains updates from the upstream repository."
 
       - name: Push changes
-        if: success()
-        run: |
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        if: env.MERGE_FAILED != 'true'
+        run: git push origin main
