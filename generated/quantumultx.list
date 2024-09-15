@@ -1,6 +1,11 @@
 # 针对部分网站显示IP归属地的分流规则
+<<<<<<< HEAD
 # anti-ip-attribution quantumultx.list v0.3.1 b3d7fbd2614b58730b4210429906516d1718c342
 # https://github.com/lwd-temp/anti-ip-attribution
+=======
+# anti-ip-attribution quantumultx.list v0.3.1 8d0c520857f095a3b451c71f8c326b50299e6022
+# https://github.com/SunsetMkt/anti-ip-attribution
+>>>>>>> upstream/main
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
 IP-CIDR,47.101.175.206/32,REJECT
@@ -100,3 +105,4 @@ DOMAIN,img.soulapp.cn,DIRECT
 DOMAIN-SUFFIX,soulapp.cn,IP
 DOMAIN,druidv6.if.qidian.com,IP
 DOMAIN,ptlogin6.qidian.com,IP
+DOMAIN,api.wmpvp.com,IP

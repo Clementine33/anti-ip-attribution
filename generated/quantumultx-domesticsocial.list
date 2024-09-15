@@ -1,6 +1,6 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 b3d7fbd2614b58730b4210429906516d1718c342
-# https://github.com/lwd-temp/anti-ip-attribution
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 8d0c520857f095a3b451c71f8c326b50299e6022
+# https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
 IP-CIDR,47.101.175.206/32,REJECT
@@ -100,3 +100,4 @@ DOMAIN,img.soulapp.cn,DIRECT
 DOMAIN-SUFFIX,soulapp.cn,DomesticSocial
 DOMAIN,druidv6.if.qidian.com,DomesticSocial
 DOMAIN,ptlogin6.qidian.com,DomesticSocial
+DOMAIN,api.wmpvp.com,DomesticSocial
