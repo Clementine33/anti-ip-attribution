@@ -318,6 +318,7 @@ config:
     # - DOMAIN-SUFFIX,music.126.net
     # - DOMAIN-SUFFIX,laiqukankan.com
     # - DOMAIN-SUFFIX,music.ntes53.netease.com
+    # ------------------------------------
     # telv4.music.ntes53.netease.com
     # telv6.music.ntes53.netease.com
     # cmccv4.music.ntes53.netease.com
@@ -328,6 +329,7 @@ config:
     # overseasv6.music.ntes53.netease.com
     # bgpv4.music.ntes53.netease.com
     # bgpv6.music.ntes53.netease.com
+    # ------------------------------------
     # - IP-CIDR,101.71.154.241/32
     # - IP-CIDR,103.126.92.132/32
     # - IP-CIDR,103.126.92.133/32
@@ -339,6 +341,12 @@ config:
     # - IP-CIDR,59.111.160.195/32
     # - IP-CIDR,59.111.19.33/32
     # - IP-CIDR,59.111.19.53/32
+    # issue #70
+    # - DOMAIN-SUFFIX,music.163.com.163jiasu.com
+    # - IP-CIDR,119.36.90.80/32
+    # - IP-CIDR,111.48.137.146/32
+    # - IP-CIDR,1.95.21.35/32
+    # - IP-CIDR,47.100.127.239/32
     # ======= Lofter ======= #
     - DOMAIN-SUFFIX,lofter.com
     - DOMAIN,yaolu.yuedu.163.com
