@@ -1,8 +1,9 @@
 # 关于贡献
-任何来自issue的改进均需要使用Co-authored-by注明意见提供者，格式如下：
 
-```
-Co-authored-by: Sunset <26019675+SunsetMkt@users.noreply.github.com>
+任何来自 issue 的改进均需要使用`Co-authored-by`注明意见提供者，格式如下：
+
+```plain
+Co-authored-by: Readable Name <UserID+Username@users.noreply.github.com>
 ```
 
-用户ID可使用API获取：https://api.github.com/users/SunsetMkt
+用户 ID 可使用 API 获取：<https://api.github.com/users/Username>
