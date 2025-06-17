@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-direct.yaml v0.3.1 2a615810d9c0bc3509335c6952136fdaad7d8627
+# anti-ip-attribution rule-provider-direct.yaml v0.3.1 be3162fc1b7c1c53465013ac4fd5d2468b1700d4
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -23,5 +23,6 @@ payload:
 - DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
 - DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
 - DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
+- DOMAIN,y.qq.com,DIRECT
 - DOMAIN,china-img.soulapp.cn,DIRECT
 - DOMAIN,img.soulapp.cn,DIRECT

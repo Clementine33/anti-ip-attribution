@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 2a615810d9c0bc3509335c6952136fdaad7d8627
+# anti-ip-attribution quantumultx.list v0.3.1 be3162fc1b7c1c53465013ac4fd5d2468b1700d4
 # https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -190,6 +190,8 @@ IP-CIDR,81.70.124.99/32,IP
 IP-CIDR,81.70.125.19/32,IP
 IP-CIDR,140.143.177.206/32,IP
 DOMAIN,api.xiaoheihe.cn,IP
+DOMAIN,y.qq.com,DIRECT
+DOMAIN-SUFFIX,y.qq.com,IP
 DOMAIN,zonai.skland.com,IP
 DOMAIN,china-img.soulapp.cn,DIRECT
 DOMAIN,img.soulapp.cn,DIRECT
