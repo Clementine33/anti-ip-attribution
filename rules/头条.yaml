@@ -17,6 +17,6 @@ config:
         
 # ======= 头条 ======= #
 
-        # 网友提供头条IP定位接口
-        - DOMAIN-SUFFIX,toutiaoapi.com
+        # # 网友提供头条IP定位接口
+        # - DOMAIN-SUFFIX,toutiaoapi.com
         

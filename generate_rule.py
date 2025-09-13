@@ -2,7 +2,7 @@ import os
 import re
 
 # 读取文件
-with open("./rules.yaml", "r") as file:
+with open("./rules.yaml", "r",encoding="utf-8") as file:
     rules = file.read()
 
 # 创建文件夹
@@ -24,5 +24,5 @@ for i in range(1, len(result), 2):
     splitYAML = f"{result[0]}\n# ======= {ruleName} ======= #\n{ruleContent}"
 
     # 写入文件
-    with open(filePath, "w") as file:
+    with open(filePath, "w",encoding="utf-8") as file:
         file.write(splitYAML)
